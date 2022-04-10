@@ -20,3 +20,9 @@ Quick resource for me
 4) Subplots:
     
     A) Sample for subplots
+    
+5) histograms:
+
+    A) Sample for histograms
+    
+    B)Gridspec samples
