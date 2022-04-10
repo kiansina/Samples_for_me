@@ -4,6 +4,7 @@ Quick resource for me
 1) Assignment 2 applied plotting: 
 
     A) Sample for plotting features 
+    
     B) GIS maps features in first part of code which is changed to comment
 
 2) Assignment 3 introduction to data science:
@@ -13,5 +14,6 @@ Quick resource for me
 3) Lat_Long_v(n):
 
     A) Sample for coordinates query
+    
     B) Finalize and delete different versions
     
