@@ -17,5 +17,5 @@ Quick resource for me
     
     B) Finalize and delete different versions
     
-4) 4.subplots:
+4) Subplots:
     A) Sample for subplots
