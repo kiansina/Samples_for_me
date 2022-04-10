@@ -26,3 +26,7 @@ Quick resource for me
     A) Sample for histograms
     
     B)Gridspec samples
+    
+6) boxplot:
+
+    A) Sample for boxplot
