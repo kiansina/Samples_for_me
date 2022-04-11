@@ -30,3 +30,29 @@ Quick resource for me
 6) boxplot:
 
     A) Sample for boxplot
+    
+7) barchart:
+
+    A) Sample for barchart
+    
+8) radarsubplots:
+
+    A) Sample for radar charts
+    
+    B) Sample for subplots
+    
+9) area_linechart:
+
+    A) Auseful strange chart to investigate
+    
+10) geomaps:
+
+    A) Sample for geomaps
+ 
+11) lineplat:
+
+    A) Sample for line plots
+    
+12) scatter_plat:
+
+    A) Sample for scatter_plat
