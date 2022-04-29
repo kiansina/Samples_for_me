@@ -114,9 +114,9 @@ Quick resource for me
 
     A) Assignment of coursera course. (Week 2 applied machine learning)
     
-27) :
+27) Statistics:
 
-    A) 
+    A) Some statistical points
 
 28) :
 
