@@ -94,7 +94,7 @@ Quick resource for me
 
     A) One sample of creating interactive plots. (I don't know the requirements to download)
     
-22) assignment3 applied plotting:
+22) Assignment3 applied plotting:
 
     A) Assignment of coursera course. (Week 3 applied plotting)
 
@@ -106,13 +106,13 @@ Quick resource for me
 
     A) Summary of very useful seaborns plots
     
-25) :
+25) Assignment4 applied plotting:
 
-    A) 
+    A) Assignment of coursera course. (Week 4 applied plotting)
  
-26) :
+26) Assignment2 applied machine learning:
 
-    A) 
+    A) Assignment of coursera course. (Week 2 applied machine learning)
     
 27) :
 
