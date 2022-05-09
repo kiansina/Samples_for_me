@@ -118,9 +118,9 @@ Quick resource for me
 
     A) Some statistical points
 
-28) :
+28) Assignment4 applied machine learning:
 
-    A) 
+    A) Assignment of coursera course. (Week 4 applied machine learning)
 
 29) :
 
