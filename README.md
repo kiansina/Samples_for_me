@@ -122,6 +122,6 @@ Quick resource for me
 
     A) Assignment of coursera course. (Week 4 applied machine learning)
 
-29) :
+29) Density_Mapbox:
 
-    A) 
+    A) Geographic density plots (Heat Map)
