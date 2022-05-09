@@ -129,3 +129,7 @@ Quick resource for me
 30) Dashboarding:
 
     A) Dashboarding and story tellig through python
+
+31) Web_Apps_Data:
+
+    A) a simple use could be interaction with your machine learning algorithm
