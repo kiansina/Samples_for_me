@@ -125,3 +125,7 @@ Quick resource for me
 29) Density_Mapbox:
 
     A) Geographic density plots (Heat Map)
+
+30) Dashboarding:
+
+    A) Dashboarding and story tellig through python
