@@ -8,7 +8,7 @@ df = pd.read_excel(r'C:\Users\sina\Desktop\gioa.xlsx')
 Address=list(df['FloodLocationName'])
 result=[]
 for i in Address:
-    location=geolocator.geocode(i)
+    location=geolocator.geocode(i)  #location=geolocator.geocode(i,timeout=10)
     if location is None:
         result.append((None,None))
     else:
