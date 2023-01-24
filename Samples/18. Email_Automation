@@ -1,0 +1,142 @@
+python -m pip show pywin32
+
+"""
+After running the above command, if you receive a version number, you don't need to install it again.
+
+Subsequently, if you get the following error message, you need to install the win32com library on your system:
+
+'pywin32' is not recognized as an internal or external command, operable program, or batch file.
+"""
+
+"""
+Installing win32com Library
+Open the prompt and type in the pip command to install the library from the terminal window.
+"""
+
+
+python -m pip install pywin32
+
+########## Pthon code
+import win32com.client
+ol = win32com.client.Dispatch('Outlook.Application')
+
+"""
+Where:
+
+ol: New variable to store the connection reference.
+win32com.client: Windows library to establish a connection between Python and Outlook.
+Dispatch: Function to create the connection.
+Outlook.Application: This can be replaced with any Microsoft application name, as required.
+"""
+
+"""
+Next, it is necessary to define the dimensions of the new email message so that Python understands where the
+content needs to be updated.
+"""
+
+# size of the new email
+olmailitem = 0x0
+
+"""
+Where:
+
+olmailitem: New variable to store the dimensions.
+0x0: Dimensions of the new email message in Python’s memory.
+Python’s functions pop-open a new email item, as soon as you define the email body dimensions.
+"""
+
+newmail = ol.CreateItem(olmailitem)
+
+"""
+Where:
+
+. newmail: New variable to store the new email reference.
+. ol: Reference of the previously created connection between Python and Outlook.
+. CreateItem(olmailitem): Command to create a new email draft.
+
+Since every email is incomplete without a subject line, you can define it within the code so that Python
+adds it automatically before sending the email to the recipient. This will be visible to the recipient, so
+be careful how you define the case and the content.
+"""
+
+newmail.Subject = 'Testing Mail'
+
+"""
+Where:
+
+newmail: Variable to store the new mail item reference.
+Subject: This can vary, depending on what you wish to have as the subject for your email.
+You can add the intended recipients within the To and CC keywords as follows:
+"""
+
+newmail.To = 'sina.kian@mail.polimi.it'
+newmail.CC = 'skr_e@yahoo.com'
+
+"""
+Where:
+
+To: Main recipient’s email address.
+CC: Copied email recipients.
+With Python, you can send emails to multiple recipients. Add a semi-colon (;) separator between email IDs
+within the To/CC column.
+
+Finally, once you define the subject and the recipients, you can add the email body to the new mail item
+before sending it to the recipients within the To and CC columns.
+"""
+
+newmail.Body= 'Hello, this is a test email to showcase how to send emails from Python and Outlook.'
+mail.HTMLBody = html_pages + <br><img src="http://www.intrumlaw.it/">
+
+"""
+To add attachments to your email, you can use the following commands:
+"""
+
+attach = r'C:\Users\s.kian\OneDrive - Intrum Law\Desktop\Patr\Decreti perenti Penelope check attività legale update 23.01.23.xlsx'
+newmail.Attachments.Add(attach)
+
+"""
+As the email is ready to be sent, there are two options you can use. If you want a preview of your email
+before sending it to the recipients, you can use the Display() command as follows:
+"""
+
+newmail.Display()
+
+
+"""
+You can use the Send() command if you want to send the email without reviewing it beforehand.
+"""
+
+newmail.Send()
+
+
+############# Recap
+"""
+Here’s the complete code:
+"""
+#import base64
+import win32com.client
+ol=win32com.client.Dispatch("outlook.application")
+olmailitem=0x0 #size of the new email
+newmail=ol.CreateItem(olmailitem)
+newmail.Subject= 'Testing Mail'
+newmail.To = 'sina.kian@mail.polimi.it'
+newmail.CC = 'skr_e@yahoo.com'
+newmail.Body= 'Hello, this is a test email to showcase how to send emails from Python and Outlook.'
+
+
+attachment = newmail.Attachments.Add(r"C:\Users\s.kian\OneDrive - Intrum Law\Desktop\real_questionnare\lo.jfif")
+attachment.PropertyAccessor.SetProperty("http://schemas.microsoft.com/mapi/proptag/0x3712001F", "MyId1")
+newmail.HTMLBody =newmail.Body+"<html><body>______________________________<br><strong>Ing. Sina Kian</strong><br><i>Data Analyst</i><br><br><img src=""cid:MyId1"" width=""80""><br><br>Via Andrea Appiani 7, 20121, Milano <br>Teams/Skype: <a href=""sina.kian@i-law.it""> sina.kian@i-law.it </a></body></html>"
+
+
+
+
+
+#mail.HTMLBody = html_pages + <br><img src="http://www.intrumlaw.it/">
+attach = r'C:\Users\s.kian\OneDrive - Intrum Law\Desktop\Patr\Decreti perenti Penelope check attività legale update 23.01.23.xlsx'
+newmail.Attachments.Add(attach)
+# attach='C:\\Users\\admin\\Desktop\\Python\\Sample.xlsx'
+# newmail.Attachments.Add(attach)
+# To display the mail before sending it
+newmail.Display()
+#newmail.Send()
